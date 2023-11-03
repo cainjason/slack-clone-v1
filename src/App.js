@@ -6,7 +6,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Header from "./Componentes/Header";
+import Header from "./components/Header";
 
 
 function App() {
