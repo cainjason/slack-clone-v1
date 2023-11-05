@@ -1,8 +1,9 @@
-import { Avatar } from "@material-ui/core"
-import React from 'react'
-import styled from "styled-components"
-import AccessTimeIcon from "@material-ui/icons/AccessTime"
-import SearchIcon from "@material-ui/icons/Search"
+import { Avatar } from "@material-ui/core";
+import React from 'react';
+import styled from "styled-components";
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import SearchIcon from "@material-ui/icons/Search";
+import HelpOutlineIcon from "@material-ui/icons/HelpOutline";
 
 
 
@@ -22,9 +23,13 @@ function Header() {
         {/* Header Search */}
         <HeaderSearch>
           <SearchIcon />
+          <input placeholder="Search Jason Cain"/>
         </HeaderSearch>
 
         {/* Header Right */}
+        <HeaderRight>
+          <HelpOutlineIcon />
+        </HeaderRight>
         
     </HeaderContainer>
   )
@@ -63,4 +68,27 @@ const HeaderAvatar = styled(Avatar)`
   }
 `;
 
-const HeaderSearch = styled.div``
+const HeaderSearch = styled.div`
+  flex: 0.4;
+  opacity: 1;
+  border-radius: 6px;
+  background-color: #421f44;
+  text-align: center;
+  display: flex;
+  padding: 0 50px;
+  color: gray;
+  border: 1px gray solid;
+
+  > input {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    min-width: 30vw;
+    outline: 0;
+    color: white;
+  }
+`
+
+const HeaderRight = styled.div`
+  padding-right: 10px;
+`
