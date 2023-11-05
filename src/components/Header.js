@@ -84,7 +84,7 @@ const HeaderSearch = styled.div`
     border: none;
     text-align: center;
     min-width: 30vw;
-    outline: 0;
+    outline: none;
     color: white;
   }
 `
