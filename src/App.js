@@ -9,6 +9,8 @@ import {
 import Header from "./components/Header";
 import styled from 'styled-components';
 import Sidebar from './components/Sidebar';
+import SidebarOption from './components/SidebarOption';
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
             <Header />
             <AppBody>
               <Sidebar />
+              <SidebarOption />
 
               <Switch>
                 <Route path="/" exact>
@@ -37,4 +40,4 @@ export default App;
 const AppBody = styled.div`
   display: flex;
   height: 100vw;
-`
+`;
