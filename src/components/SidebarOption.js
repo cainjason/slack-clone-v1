@@ -4,7 +4,7 @@ import styled from "styled-components";
 function SidebarOption() {
   return (
     <div>
-      <h3> Something </h3>
+      
     </div>
   )
 }
