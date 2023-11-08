@@ -3,14 +3,11 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 import Header from "./components/Header";
 import styled from 'styled-components';
 import Sidebar from './components/Sidebar';
-import SidebarOption from './components/SidebarOption';
-
 
 
 function App() {
@@ -21,7 +18,6 @@ function App() {
             <Header />
             <AppBody>
               <Sidebar />
-              <SidebarOption />
 
               <Switch>
                 <Route path="/" exact>
